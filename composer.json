@@ -1,0 +1,12 @@
+{
+    "name": "danvin-test/twitter-activity",
+    "description": "Simple PHP Twitter User Activity Checker",
+    "license": "MIT",
+    "require": {
+        "silex/silex": "~2.0",
+    	"symfony/browser-kit": "*",
+	"j7mbo/twitter-api-php": "*",
+    	"phpunit/phpunit": "^7"
+    },
+    "minimum-stability": "dev"
+}
