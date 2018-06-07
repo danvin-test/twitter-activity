@@ -13,7 +13,6 @@ class IndexTest extends WebTestCase
     	return $app;
     }
 
-
     public function testBasicHeaderResponse()
     {
         $client = $this->createClient();
@@ -21,15 +20,12 @@ class IndexTest extends WebTestCase
         $this->assertTrue($client->getResponse()->isOk());
     }
 
-    
     public function testBasic()
     {
         $client = $this->createClient();
     	$crawler = $client->request('GET', '/');
     	$this->assertEquals('Try /hello/:name', $client->getResponse()->getContent());
     }
-  
-    
     
     public function testGreeting()
     {
@@ -37,8 +33,7 @@ class IndexTest extends WebTestCase
     	$crawler = $client->request('GET', '/hello/daniel');
     	$this->assertEquals('Hello daniel', $client->getResponse()->getContent());
     }
-
-    
+   
     public function testTweets()
     {
         $client = $this->createClient();
