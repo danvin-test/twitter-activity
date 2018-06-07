@@ -38,7 +38,6 @@ class IndexTest extends WebTestCase
     {
         $client = $this->createClient();
         $crawler = $client->request('GET', '/histogram/Daniel76433021');                    
-        //$this->assertEquals('{"18":1}', $client->getResponse()->getContent());
         $this->assertJsonStringEqualsJsonString(json_encode(["18" => 1]),$client->getResponse()->getContent());
     }
 }
