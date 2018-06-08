@@ -22,11 +22,15 @@ Installation
 
 Configuration
 ------
-Edit **config.json**, located in the root folder of the project, to set up your [Twitter API credentials](https://developer.twitter.com/en/docs/basics/getting-started).
+**Twitter API Credentials**
 
-**Notable mention**
-1. This web app uses [statuses/user_timeline](https://developer.twitter.com/en/docs/tweets/timelines/api-reference/get-statuses-user_timeline.html) Twitter API. Folow the link to read more about resource information.
-2. Advanced configuration available in the config.json, under "twitterRequestSettings" section.
+Edit config.json, located in the root folder of the project, to set up your [Twitter API credentials](https://developer.twitter.com/en/docs/basics/getting-started).
+
+Notable mention: This web app uses [statuses/user_timeline](https://developer.twitter.com/en/docs/tweets/timelines/api-reference/get-statuses-user_timeline.html) Twitter API. Advanced configuration available in the config.json, under `twitterRequestSettings` section.
+
+**.htaccess**
+
+If your site is not at the webroot level you will have to uncomment the RewriteBase statement and adjust the path to point to your directory, relative from the webroot. More information available at the [Silex Webserver Configuration](https://silex.symfony.com/doc/2.0/web_servers.html) page
 
 Usage
 ----
