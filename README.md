@@ -41,14 +41,14 @@ The application has 3 endpoints:
 
     php index.php GET /                            
     php index.php GET /hello/Daniel
-    php index.php GET /histogram/Daniel76433021
+    php index.php GET /histogram/Ferrari
 
 
 **WebServer**
 
     http://localhost/
     http://localhost/hello/daniel
-    http://localhost/histogram/Daniel76433021
+    http://localhost/histogram/Ferrari
 
 
 Running the tests
